@@ -20,11 +20,11 @@ public class Triangle extends Polygon {
 		return Math.sqrt(p*(p-lengths[0])*(p-lengths[1])*(p-lengths[2]));
 	}
 	
-	public Line[] getEdges() {
-		Line[] edges = new Line[3];
-		edges[0] = new Line(this.vertices.get(0), this.vertices.get(1));
-		edges[1] = new Line(this.vertices.get(1), this.vertices.get(2));
-		edges[2] = new Line(this.vertices.get(2), this.vertices.get(0));
+	public LineSeg[] getEdges() {
+		LineSeg[] edges = new LineSeg[3];
+		edges[0] = new LineSeg(this.vertices.get(0), this.vertices.get(1));
+		edges[1] = new LineSeg(this.vertices.get(1), this.vertices.get(2));
+		edges[2] = new LineSeg(this.vertices.get(2), this.vertices.get(0));
 		return edges;
 	}
 	
