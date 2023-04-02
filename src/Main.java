@@ -41,6 +41,11 @@ public class Main {
 		
 		System.out.println(l1.isParallelTo(l4));
 		System.out.println(l5.IsPerpendicularTo(l4));
+		
+		List<Integer> lst1 = new MyArrayList<>();
+		List<Integer> lst2 = new MyLinkedList<>();
+		lst1.add(1);
+		lst2.add(2);
 	}
 
 }

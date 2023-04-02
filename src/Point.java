@@ -1,5 +1,5 @@
 
-public class Point {
+public class Point implements Comparable<Point> {
 	private double x,y;
 	
 	public Point(double x, double y) {
@@ -75,6 +75,23 @@ public class Point {
 	public static double getSlope(Point p1, Point p2) {
 		return 0;
 	}
+
+
+	@Override
+	public int compareTo(Point o) {
+		// TODO Auto-generated method stub
+		if (this.x < o.x) return -1;
+		else if (this.x > o.x) return 1;
+		else {
+			if (this.y<o.y) return -1;
+			else if (this.y>o.y) return 1;
+			else return 0;
+		}
+
+	}
+
+
+	
 	
 	
 }
